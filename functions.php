@@ -6,3 +6,27 @@ function avada_child_scripts() {
 	}
 }
 add_action('wp_enqueue_scripts', 'avada_child_scripts');
+
+
+if ( ! function_exists('homepage_list')) {
+	function homepage_list() {
+		echo '<div class="list">';
+			$args = array (	'category_name'      => 'digest' );
+			$stories = new WP_Query( $args );
+
+			if ( $stories->have_posts()) {
+				echo '<ul class="post-list">';
+					while ( $stories->have_posts() ) {
+						$stories->the_post();
+							echo '<li class="post-list-item">'; ?>
+								<a class="link" href="<?php echo get_permalink() ?>">
+									<p><?php echo get_the_title($post->ID); ?></p>
+								</a>
+							<?php echo '</li>';
+					}
+
+				echo '</ul>';
+			}
+		echo '</div>';
+	}
+}
