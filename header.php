@@ -1132,6 +1132,10 @@
 	<?php echo $smof_data['google_analytics']; ?>
 
 	<?php echo $smof_data['space_head']; ?>
+	
+	
+	
+	<link rel=stylesheet href="<?php echo bloginfo('url') . "/wp-content/themes/weeklydigest/style/css/main.css"; ?>" type="text/css" />
 </head>
 <body>
 	<div id="main" class="clearfix <?php echo $main_class; ?>" style="<?php echo $main_css; ?>">
