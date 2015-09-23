@@ -2,11 +2,11 @@
   list-style-type: none;
   margin: 0;
   padding: 0; }
-  #homepage #content .list .post-list p {
-    font-size: 75px;
-    line-height: 85px;
-    margin: 0;
-    padding: 0;
-    transition: color 0.5s ease; }
+#homepage #content p {
+  font-size: 75px;
+  line-height: 85px;
+  margin: 0;
+  padding: 0;
+  transition: color 0.5s ease; }
 
 /*# sourceMappingURL=main.css.map */
