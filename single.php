@@ -35,6 +35,14 @@
 				<td colspan="2"><a href="<?php the_field('sub3_link'); ?>"><img src="<?php the_field('sub3_image'); ?>" alt=" "></a></td>
    			</tr>
 			
+			<!-- Ads -->
+			<tr><td colspan="6">
+				<a href="<?php the_field('ad_link'); ?>"><img src="<?php the_field('ad_image'); ?>" alt=" "></a>
+			</td></tr>
+			<tr><td colspan="6">
+				<a href="<?php the_field('ad2_link'); ?>"><img src="<?php the_field('ad2_image'); ?>" alt=" "></a>
+			</td></tr>
+			
 			<!-- Footer -->
    			<tr><td colspan="6">
 			<table>
